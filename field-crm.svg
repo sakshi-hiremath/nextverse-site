@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0915"/>
+      <stop offset="100%" stop-color="#18112d"/>
+    </linearGradient>
+    <linearGradient id="fc-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9d86d6"/>
+      <stop offset="100%" stop-color="#7158ac"/>
+    </linearGradient>
+    <linearGradient id="fc-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="fc-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="550" rx="20" fill="url(#fc-bg)"/>
+  <rect x="2" y="2" width="896" height="546" rx="18" fill="none" stroke="rgba(255,255,255,0.1)"/>
+
+  <!-- Desktop Field CRM Dashboard Screen -->
+  <g transform="translate(50, 40)">
+    <rect width="520" height="470" rx="16" fill="#120e22" stroke="rgba(255,255,255,0.14)" filter="drop-shadow(0 25px 50px rgba(0,0,0,0.8))"/>
+    
+    <!-- Top Header -->
+    <rect width="520" height="44" rx="16" fill="#1a1432"/>
+    <circle cx="24" cy="22" r="5" fill="#ef4444"/>
+    <circle cx="40" cy="22" r="5" fill="#f59e0b"/>
+    <circle cx="56" cy="22" r="5" fill="#10b981"/>
+    <text x="260" y="27" fill="#cfcad9" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">Field CRM — Sales Pipeline Dashboard</text>
+    <rect x="424" y="12" width="80" height="20" rx="10" fill="rgba(157,134,214,0.2)" stroke="rgba(157,134,214,0.4)"/>
+    <text x="464" y="25" fill="#9d86d6" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" text-anchor="middle">NEXTVERSE</text>
+
+    <!-- Metrics Row -->
+    <g transform="translate(20, 60)">
+      <rect width="150" height="70" rx="10" fill="#18122c" stroke="rgba(255,255,255,0.06)"/>
+      <text x="14" y="24" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="11">Active Field Leads</text>
+      <text x="14" y="52" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="24" font-weight="600">1,248</text>
+      <text x="96" y="52" fill="#34d399" font-family="'Inter Tight', sans-serif" font-size="11">+28%</text>
+
+      <g transform="translate(164, 0)">
+        <rect width="150" height="70" rx="10" fill="#18122c" stroke="rgba(255,255,255,0.06)"/>
+        <text x="14" y="24" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="11">Instant Quotes Sent</text>
+        <text x="14" y="52" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="24" font-weight="600">384</text>
+        <text x="82" y="52" fill="#38bdf8" font-family="'Inter Tight', sans-serif" font-size="11">Today</text>
+      </g>
+
+      <g transform="translate(328, 0)">
+        <rect width="152" height="70" rx="10" fill="#18122c" stroke="rgba(255,255,255,0.06)"/>
+        <text x="14" y="24" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="11">Follow-up Velocity</text>
+        <text x="14" y="52" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="24" font-weight="600">96.8%</text>
+        <text x="94" y="52" fill="#fbbf24" font-family="'Inter Tight', sans-serif" font-size="11">On-time</text>
+      </g>
+    </g>
+
+    <!-- Pipeline Stages Columns -->
+    <g transform="translate(20, 146)">
+      <!-- Stage 1: Lead Capture -->
+      <rect width="152" height="304" rx="10" fill="#150f27"/>
+      <rect x="12" y="12" width="128" height="24" rx="6" fill="rgba(157,134,214,0.15)"/>
+      <text x="76" y="28" fill="#9d86d6" font-family="'Inter Tight', sans-serif" font-size="11" font-weight="600" text-anchor="middle">LEAD CAPTURE (14)</text>
+
+      <!-- Lead Card 1 -->
+      <g transform="translate(10, 46)">
+        <rect width="132" height="74" rx="8" fill="#1c1634" stroke="rgba(255,255,255,0.08)"/>
+        <text x="10" y="20" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="11" font-weight="600">Zenith Retail Group</text>
+        <text x="10" y="36" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="10">Field rep: Sarah T.</text>
+        <rect x="10" y="48" width="60" height="16" rx="4" fill="rgba(52,211,153,0.15)"/>
+        <text x="40" y="60" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">High Value</text>
+      </g>
+
+      <!-- Lead Card 2 -->
+      <g transform="translate(10, 128)">
+        <rect width="132" height="74" rx="8" fill="#1c1634" stroke="rgba(255,255,255,0.08)"/>
+        <text x="10" y="20" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="11" font-weight="600">Apex Hospitality</text>
+        <text x="10" y="36" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="10">Field rep: Daniel K.</text>
+        <rect x="10" y="48" width="54" height="16" rx="4" fill="rgba(251,191,36,0.15)"/>
+        <text x="37" y="60" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Walk-in</text>
+      </g>
+
+      <!-- Stage 2: Instant Quotations -->
+      <g transform="translate(164, 0)">
+        <rect width="152" height="304" rx="10" fill="#150f27"/>
+        <rect x="12" y="12" width="128" height="24" rx="6" fill="rgba(56,189,248,0.15)"/>
+        <text x="76" y="28" fill="#38bdf8" font-family="'Inter Tight', sans-serif" font-size="11" font-weight="600" text-anchor="middle">INSTANT QUOTE (8)</text>
+
+        <!-- Quote Card 1 -->
+        <g transform="translate(10, 46)">
+          <rect width="132" height="74" rx="8" fill="#1c1634" stroke="rgba(56,189,248,0.25)"/>
+          <text x="10" y="20" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="11" font-weight="600">Vanguard Logistics</text>
+          <text x="10" y="36" fill="#38bdf8" font-family="'Inter Tight', sans-serif" font-size="10">Quote #Q-9821</text>
+          <text x="10" y="60" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600">$42,500</text>
+        </g>
+      </g>
+
+      <!-- Stage 3: Follow-Up -->
+      <g transform="translate(328, 0)">
+        <rect width="152" height="304" rx="10" fill="#150f27"/>
+        <rect x="12" y="12" width="128" height="24" rx="6" fill="rgba(52,211,153,0.15)"/>
+        <text x="76" y="28" fill="#34d399" font-family="'Inter Tight', sans-serif" font-size="11" font-weight="600" text-anchor="middle">FOLLOW-UP (12)</text>
+
+        <!-- Follow-up Card 1 -->
+        <g transform="translate(10, 46)">
+          <rect width="132" height="74" rx="8" fill="#1c1634" stroke="rgba(52,211,153,0.25)"/>
+          <text x="10" y="20" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="11" font-weight="600">Horizon Estates</text>
+          <text x="10" y="36" fill="#34d399" font-family="'Inter Tight', sans-serif" font-size="10">Follow-up: 2:30 PM</text>
+          <rect x="10" y="48" width="68" height="16" rx="4" fill="rgba(52,211,153,0.2)"/>
+          <text x="44" y="60" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Auto-Alert</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Mobile Field CRM Smartphone View (Layered in Front) -->
+  <g transform="translate(600, 70)">
+    <rect width="250" height="430" rx="32" fill="#0d0918" stroke="rgba(157,134,214,0.4)" stroke-width="3" filter="drop-shadow(0 30px 60px rgba(0,0,0,0.9))"/>
+    
+    <!-- Phone Notch -->
+    <rect x="85" y="10" width="80" height="16" rx="8" fill="#1c1634"/>
+    
+    <!-- App Header -->
+    <g transform="translate(20, 40)">
+      <text x="0" y="16" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="16" font-weight="600">Field CRM</text>
+      <text x="0" y="32" fill="#9d86d6" font-family="'JetBrains Mono', monospace" font-size="10">SALES MOBILE SUITE</text>
+    </g>
+
+    <!-- Quick Action Button in App -->
+    <g transform="translate(20, 84)">
+      <rect width="210" height="42" rx="10" fill="url(#fc-purple)"/>
+      <text x="105" y="26" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="12" font-weight="600" text-anchor="middle">+ Capture New Lead</text>
+    </g>
+
+    <!-- Mobile Quote Generator Card -->
+    <g transform="translate(20, 138)">
+      <rect width="210" height="98" rx="12" fill="#161028" stroke="rgba(255,255,255,0.08)"/>
+      <text x="12" y="22" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="10">INSTANT QUOTE GENERATOR</text>
+      <text x="12" y="44" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="14" font-weight="600">Solaris Healthcare</text>
+      <text x="12" y="62" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">PDF Generated in 4s</text>
+      <rect x="12" y="70" width="76" height="18" rx="4" fill="rgba(56,189,248,0.15)"/>
+      <text x="50" y="83" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Share to Client</text>
+    </g>
+
+    <!-- Mobile Follow-up Notification -->
+    <g transform="translate(20, 248)">
+      <rect width="210" height="90" rx="12" fill="#161028" stroke="rgba(255,255,255,0.08)"/>
+      <circle cx="24" cy="24" r="8" fill="url(#fc-emerald)"/>
+      <text x="40" y="28" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-size="12" font-weight="600">Next Scheduled Visit</text>
+      <text x="12" y="52" fill="#cfcad9" font-family="'Inter Tight', sans-serif" font-size="11">Prestige Grand Hall</text>
+      <text x="12" y="70" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="10">Today at 4:00 PM · Follow-up #2</text>
+    </g>
+
+    <!-- App Bottom Bar -->
+    <g transform="translate(20, 354)">
+      <rect width="210" height="48" rx="24" fill="#1a1432"/>
+      <circle cx="45" cy="24" r="6" fill="#9d86d6"/>
+      <circle cx="105" cy="24" r="6" fill="#8f8a9f"/>
+      <circle cx="165" cy="24" r="6" fill="#8f8a9f"/>
+    </g>
+  </g>
+</svg>
+

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ss-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0815"/>
+      <stop offset="100%" stop-color="#140e29"/>
+    </linearGradient>
+    <linearGradient id="ss-chart" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9d86d6" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#9d86d6" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="550" rx="20" fill="url(#ss-bg)"/>
+  <rect x="2" y="2" width="896" height="546" rx="18" fill="none" stroke="rgba(255,255,255,0.1)"/>
+
+  <!-- SaaS Dashboard Layout -->
+  <g transform="translate(60, 45)">
+    <!-- Sidebar -->
+    <rect width="180" height="430" rx="14" fill="#110d22" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="35" cy="35" r="10" fill="#9d86d6"/>
+    <text x="56" y="40" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="14">CLOUD OS</text>
+    
+    <rect x="20" y="80" width="140" height="34" rx="8" fill="rgba(157,134,214,0.15)"/>
+    <text x="35" y="102" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="13">Analytics</text>
+
+    <text x="35" y="145" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">Customers</text>
+    <text x="35" y="185" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">Subscriptions</text>
+    <text x="35" y="225" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">API Webhooks</text>
+    <text x="35" y="265" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">Settings</text>
+
+    <!-- Main Content Area -->
+    <g transform="translate(200, 0)">
+      <!-- KPI Cards -->
+      <g transform="translate(0, 0)">
+        <rect width="180" height="85" rx="12" fill="#140f28" stroke="rgba(255,255,255,0.08)"/>
+        <text x="20" y="32" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">MONTHLY MRR</text>
+        <text x="20" y="62" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="22">$42,850</text>
+      </g>
+
+      <g transform="translate(195, 0)">
+        <rect width="180" height="85" rx="12" fill="#140f28" stroke="rgba(255,255,255,0.08)"/>
+        <text x="20" y="32" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">ACTIVE USERS</text>
+        <text x="20" y="62" fill="#9d86d6" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="22">8,420</text>
+      </g>
+
+      <g transform="translate(390, 0)">
+        <rect width="190" height="85" rx="12" fill="#140f28" stroke="rgba(255,255,255,0.08)"/>
+        <text x="20" y="32" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">UPTIME SLA</text>
+        <text x="20" y="62" fill="#34d399" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="22">99.99%</text>
+      </g>
+
+      <!-- Revenue Chart Card -->
+      <g transform="translate(0, 105)">
+        <rect width="580" height="325" rx="14" fill="#120e24" stroke="rgba(255,255,255,0.1)"/>
+        <text x="25" y="38" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="16">Platform Growth &amp; Telemetry</text>
+        <text x="25" y="58" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">AGGREGATE QUERY VOLUME (LAST 30 DAYS)</text>
+
+        <!-- Chart Grid Lines -->
+        <line x1="40" y1="100" x2="540" y2="100" stroke="rgba(255,255,255,0.05)"/>
+        <line x1="40" y1="160" x2="540" y2="160" stroke="rgba(255,255,255,0.05)"/>
+        <line x1="40" y1="220" x2="540" y2="220" stroke="rgba(255,255,255,0.05)"/>
+        <line x1="40" y1="280" x2="540" y2="280" stroke="rgba(255,255,255,0.08)"/>
+
+        <!-- Area fill under curve -->
+        <path d="M 40 250 Q 140 230, 220 180 T 380 140 T 540 85 L 540 280 L 40 280 Z" fill="url(#ss-chart)"/>
+        <!-- Curve line -->
+        <path d="M 40 250 Q 140 230, 220 180 T 380 140 T 540 85" fill="none" stroke="#9d86d6" stroke-width="3"/>
+        <circle cx="540" cy="85" r="5" fill="#ffffff" stroke="#9d86d6" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>
+

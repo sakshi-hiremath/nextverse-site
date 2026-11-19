@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Sign in — Nextverse</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0; min-height: 100vh; background: #08080a; color: #e5e5e5;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow-x: hidden; user-select: none;
+    }
+    #ambient {
+      position: fixed; inset: 0; pointer-events: none; opacity: 0;
+      background: radial-gradient(circle at 50% 30%, rgba(251,191,36,0.22), transparent 70%);
+      transition: opacity .7s ease;
+    }
+    #grid {
+      position: fixed; inset: 0; pointer-events: none; opacity: .04;
+      background-image: linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .back-btn {
+      position: fixed; top: calc(16px + env(safe-area-inset-top, 0px)); left: 16px; z-index: 50;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 18px; border-radius: 99px;
+      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14);
+      color: #fff; font-size: 13px; text-decoration: none; transition: .25s;
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    }
+    .back-btn:hover { background: rgba(255,255,255,.18); transform: translateX(-2px); }
+  </style>
+</head>
+<body class="lamp-on on">
+  <a href="index.html" class="back-btn">← Back to Nextverse</a>
+  <div id="ambient"></div>
+  <div id="grid"></div>
+
+  <main class="lamp-stage">
+    <!-- FLOOR LAMP -->
+    <div class="lamp">
+      <div class="cone"></div>
+      <button type="button" id="lamp-btn" class="head" aria-pressed="true" aria-label="Pull the lamp chain to turn the light off" onclick="toggleLight()">
+        <span class="glow"></span>
+        <span class="shade"></span>
+        <span class="rim"></span>
+        <span class="chain-wrap">
+          <span id="chain" class="chain"><span class="link"></span><span class="knob"></span></span>
+        </span>
+      </button>
+      <div class="stand"></div>
+      <div class="base"></div>
+    </div>
+
+    <!-- LOGIN CARD -->
+    <div class="card-wrap">
+      <div id="hint">Pull the chain to sign in</div>
+      <div id="login-card">
+        <div style="position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(253,230,138,.3),transparent)"></div>
+
+        <div style="margin-bottom:24px">
+          <span class="lamp-badge">Special Access</span>
+          <h2 class="lamp-serif lamp-card-title">Welcome back.</h2>
+          <p class="lamp-card-sub">Pull up a chair.</p>
+        </div>
+
+        <form onsubmit="event.preventDefault();">
+          <div class="lamp-group">
+            <label for="email" class="lamp-lbl">Email</label>
+            <input id="email" type="email" autocomplete="email" placeholder="name@work-email.com" class="lamp-input" required />
+          </div>
+
+          <div class="lamp-group">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <label for="password-input" class="lamp-lbl" style="margin-bottom:0">Password</label>
+              <a href="#" style="font-size:11px;color:rgba(251,191,36,.8);text-decoration:none">Forgot?</a>
+            </div>
+            <div style="position:relative">
+              <input id="password-input" type="password" autocomplete="current-password" placeholder="••••••••" class="lamp-input" style="padding-right:40px" required />
+              <button type="button" aria-label="Show password" onclick="togglePasswordVisibility()" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:none;color:#737373;cursor:pointer;display:flex;align-items:center;padding:4px">
+                <svg id="eye-icon" style="width:16px;height:16px" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" class="lamp-submit-btn">
+            Sign in
+          </button>
+
+          <div class="lamp-or">
+            <div class="lamp-or-line"></div>
+            <span class="lamp-or-text">or</span>
+            <div class="lamp-or-line"></div>
+          </div>
+
+          <button type="button" class="lamp-google-btn">
+            <svg style="width:14px;height:14px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="currentColor" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="currentColor" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            Sign in with Google
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    var EYE = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>';
+    var EYE_OFF = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18"/>';
+    var eyeEl = document.getElementById('eye-icon');
+    if(eyeEl) eyeEl.innerHTML = EYE;
+
+    var busy = false;
+    function toggleLight() {
+      if (busy) return;
+      busy = true;
+      var chain = document.getElementById('chain');
+      if (chain) {
+        chain.classList.remove('pulled');
+        void chain.offsetWidth;
+        chain.classList.add('pulled');
+      }
+      setTimeout(function () {
+        var on = document.body.classList.toggle('lamp-on');
+        document.body.classList.toggle('on', on);
+        var card = document.getElementById('login-card');
+        if (card) card.inert = !on;
+        var btn = document.getElementById('lamp-btn');
+        if (btn) {
+          btn.setAttribute('aria-pressed', String(on));
+          btn.setAttribute('aria-label', on ? 'Pull the lamp chain to turn the light off' : 'Pull the lamp chain to turn the light on');
+        }
+        busy = false;
+      }, 180);
+    }
+
+    function togglePasswordVisibility() {
+      var pwd = document.getElementById('password-input');
+      if (!pwd) return;
+      var show = pwd.type === 'password';
+      pwd.type = show ? 'text' : 'password';
+      if (eyeEl) eyeEl.innerHTML = show ? EYE_OFF : EYE;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ff-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0914"/>
+      <stop offset="50%" stop-color="#140f24"/>
+      <stop offset="100%" stop-color="#09060f"/>
+    </linearGradient>
+    <linearGradient id="ff-amber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb703"/>
+      <stop offset="100%" stop-color="#fb8500"/>
+    </linearGradient>
+    <linearGradient id="ff-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9d86d6"/>
+      <stop offset="100%" stop-color="#7158ac"/>
+    </linearGradient>
+    <radialGradient id="ff-glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ffb703" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#7158ac" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ff-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#ff-bg)"/>
+  <circle cx="950" cy="180" r="280" fill="url(#ff-glow)"/>
+  <circle cx="200" cy="600" r="220" fill="#7158ac" opacity="0.12" filter="url(#ff-blur)"/>
+
+  <!-- Top App Navigation -->
+  <rect x="40" y="30" width="1120" height="64" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)"/>
+  <!-- Logo -->
+  <path d="M70 52 L94 52 L88 72 L64 72 Z" fill="url(#ff-amber)"/>
+  <path d="M84 46 L108 46 L102 66 L78 66 Z" fill="url(#ff-purple)" opacity="0.75"/>
+  <text x="120" y="68" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="20" letter-spacing="2">FITNESS FORGE</text>
+  
+  <text x="600" y="68" fill="#a9a4ba" font-family="'Inter Tight', sans-serif" font-size="14" letter-spacing="1">PROGRAMS</text>
+  <text x="710" y="68" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="14" letter-spacing="1">TRAINERS</text>
+  <text x="810" y="68" fill="#a9a4ba" font-family="'Inter Tight', sans-serif" font-size="14" letter-spacing="1">SCHEDULE</text>
+  <text x="910" y="68" fill="#a9a4ba" font-family="'Inter Tight', sans-serif" font-size="14" letter-spacing="1">MEMBERSHIP</text>
+
+  <rect x="1020" y="44" width="120" height="36" rx="18" fill="url(#ff-amber)"/>
+  <text x="1080" y="67" fill="#0b0813" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="12" text-anchor="middle" letter-spacing="0.5">FREE TRIAL ↗</text>
+
+  <!-- Hero Content Left -->
+  <text x="60" y="160" fill="url(#ff-amber)" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" letter-spacing="3">HIGH PERFORMANCE TRAINING FACILITY</text>
+  <text x="60" y="215" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="44" letter-spacing="-1">FORGE YOUR PEAK STATE.</text>
+  <text x="60" y="265" fill="#9d86d6" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="44" letter-spacing="-1">SCIENCE-BACKED ATHLETIC CONDITIONING.</text>
+  
+  <text x="60" y="315" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="16" width="500">Elite strength equipment, personalized biometric coaching, and a driven community engineered for breakthrough results.</text>
+
+  <!-- CTA Buttons -->
+  <rect x="60" y="345" width="180" height="48" rx="24" fill="#ffffff"/>
+  <text x="150" y="375" fill="#0b0813" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="15" text-anchor="middle">Book Session ↗</text>
+  
+  <rect x="256" y="345" width="180" height="48" rx="24" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+  <text x="346" y="375" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="500" font-size="15" text-anchor="middle">Explore Plans</text>
+
+  <!-- Live Stats Row -->
+  <g transform="translate(60, 425)">
+    <rect width="140" height="74" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="34" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="24">1,850+</text>
+    <text x="20" y="56" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">ACTIVE MEMBERS</text>
+  </g>
+  <g transform="translate(216, 425)">
+    <rect width="140" height="74" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="34" fill="#ffb703" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="24">28+</text>
+    <text x="20" y="56" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">COACHES</text>
+  </g>
+  <g transform="translate(372, 425)">
+    <rect width="140" height="74" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="34" fill="#9d86d6" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="24">99.4%</text>
+    <text x="20" y="56" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">GOAL RATE</text>
+  </g>
+
+  <!-- Right Visual Cards (Dumbbell / Training Graphic & Timetable) -->
+  <g transform="translate(680, 130)">
+    <!-- Big Showcase Card -->
+    <rect width="480" height="380" rx="20" fill="linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02))" stroke="rgba(255,255,255,0.12)"/>
+    
+    <!-- Stylized Dumbbell / Athletic Illustration -->
+    <circle cx="240" cy="150" r="90" fill="url(#ff-purple)" opacity="0.18"/>
+    <!-- Dumbbell central bar -->
+    <rect x="150" y="142" width="180" height="16" rx="8" fill="#ffffff" opacity="0.85"/>
+    <!-- Left plates -->
+    <rect x="130" y="105" width="22" height="90" rx="8" fill="url(#ff-amber)"/>
+    <rect x="105" y="118" width="20" height="64" rx="6" fill="#fb8500"/>
+    <rect x="88" y="128" width="14" height="44" rx="4" fill="#9d86d6"/>
+    <!-- Right plates -->
+    <rect x="328" y="105" width="22" height="90" rx="8" fill="url(#ff-amber)"/>
+    <rect x="355" y="118" width="20" height="64" rx="6" fill="#fb8500"/>
+    <rect x="378" y="128" width="14" height="44" rx="4" fill="#9d86d6"/>
+
+    <text x="240" y="240" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="22" text-anchor="middle">STRENGTH LAB &amp; CONDITIONING</text>
+    <text x="240" y="268" fill="#a9a4ba" font-family="'Inter Tight', sans-serif" font-size="14" text-anchor="middle">Next session: Hypertrophy &amp; Core · 08:30 AM</text>
+
+    <!-- Schedule quick bar -->
+    <rect x="40" y="296" width="400" height="56" rx="12" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.08)"/>
+    <circle cx="70" cy="324" r="10" fill="#ffb703"/>
+    <text x="96" y="322" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="14">Real-Time Class Availability</text>
+    <text x="96" y="338" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">4 SLOTS REMAINING TODAY</text>
+    <rect x="350" y="308" width="76" height="32" rx="16" fill="rgba(255,255,255,0.1)"/>
+    <text x="388" y="329" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="12" text-anchor="middle">JOIN</text>
+  </g>
+
+  <!-- Bottom Interactive Programs Bar -->
+  <g transform="translate(60, 550)">
+    <rect width="1080" height="150" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    
+    <!-- Program 1 -->
+    <g transform="translate(30, 25)">
+      <rect width="320" height="100" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="24" y="38" fill="#ffb703" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1">TRACK 01</text>
+      <text x="24" y="64" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="18">Power &amp; Hypertrophy</text>
+      <text x="24" y="86" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">Barbell velocity tracking &amp; periodization</text>
+    </g>
+
+    <!-- Program 2 -->
+    <g transform="translate(380, 25)">
+      <rect width="320" height="100" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="24" y="38" fill="#9d86d6" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1">TRACK 02</text>
+      <text x="24" y="64" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="18">Metabolic Engine</text>
+      <text x="24" y="86" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">Zone 2 cardio &amp; high intensity intervals</text>
+    </g>
+
+    <!-- Program 3 -->
+    <g transform="translate(730, 25)">
+      <rect width="320" height="100" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="24" y="38" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1">TRACK 03</text>
+      <text x="24" y="64" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="18">Mobility &amp; Recovery</text>
+      <text x="24" y="86" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">Cold plunge, sauna &amp; myofascial release</text>
+    </g>
+  </g>
+</svg>
+

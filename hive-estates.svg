@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="he-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08070d"/>
+      <stop offset="50%" stop-color="#120e1e"/>
+      <stop offset="100%" stop-color="#07060a"/>
+    </linearGradient>
+    <linearGradient id="he-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2c974"/>
+      <stop offset="100%" stop-color="#b8933b"/>
+    </linearGradient>
+    <linearGradient id="he-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bda8f2"/>
+      <stop offset="100%" stop-color="#7158ac"/>
+    </linearGradient>
+    <radialGradient id="he-glow" cx="80%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#b8933b" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#7158ac" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="he-blur">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#he-bg)"/>
+  <circle cx="950" cy="190" r="300" fill="url(#he-glow)"/>
+  <circle cx="180" cy="580" r="240" fill="#7158ac" opacity="0.12" filter="url(#he-blur)"/>
+
+  <!-- Top App Navigation -->
+  <rect x="40" y="30" width="1120" height="64" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)"/>
+  <!-- Hexagon logo icon -->
+  <polygon points="76,46 92,54 92,72 76,80 60,72 60,54" fill="none" stroke="url(#he-gold)" stroke-width="2.5"/>
+  <circle cx="76" cy="63" r="4" fill="url(#he-gold)"/>
+  <text x="110" y="68" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="20" letter-spacing="3">HIVE ESTATES</text>
+  
+  <text x="560" y="68" fill="#a9a4ba" font-family="'Inter Tight', sans-serif" font-size="14" letter-spacing="1">PORTFOLIO</text>
+  <text x="670" y="68" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="14" letter-spacing="1">DEVELOPMENTS</text>
+  <text x="800" y="68" fill="#a9a4ba" font-family="'Inter Tight', sans-serif" font-size="14" letter-spacing="1">VIRTUAL TOURS</text>
+  <text x="940" y="68" fill="#a9a4ba" font-family="'Inter Tight', sans-serif" font-size="14" letter-spacing="1">PRIVATE DESK</text>
+
+  <rect x="1030" y="44" width="110" height="36" rx="18" fill="url(#he-gold)"/>
+  <text x="1085" y="67" fill="#0b0813" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="12" text-anchor="middle" letter-spacing="0.5">INQUIRE ↗</text>
+
+  <!-- Hero Content Left -->
+  <text x="60" y="160" fill="url(#he-gold)" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" letter-spacing="3">EXCLUSIVE REAL ESTATE &amp; BESPOKE VILLAS</text>
+  <text x="60" y="215" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="44" letter-spacing="-1">CURATING LUXURY LIVING.</text>
+  <text x="60" y="265" fill="#bda8f2" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="44" letter-spacing="-1">ARCHITECTURAL RESIDENCES OF DISTINCTION.</text>
+  
+  <text x="60" y="315" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="16" width="520">From prime waterfront estates to visionary hillside penthouses, explore meticulously crafted residences with verified virtual walkthroughs and discreet private advisory.</text>
+
+  <!-- CTA Buttons -->
+  <rect x="60" y="345" width="200" height="48" rx="24" fill="#ffffff"/>
+  <text x="160" y="375" fill="#0b0813" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="15" text-anchor="middle">View Developments ↗</text>
+  
+  <rect x="276" y="345" width="180" height="48" rx="24" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+  <text x="366" y="375" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="500" font-size="15" text-anchor="middle">Schedule Private Tour</text>
+
+  <!-- Live Stats Row -->
+  <g transform="translate(60, 425)">
+    <rect width="140" height="74" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="34" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="24">$180M+</text>
+    <text x="20" y="56" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">ASSETS DELIVERED</text>
+  </g>
+  <g transform="translate(216, 425)">
+    <rect width="140" height="74" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="34" fill="url(#he-gold)" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="24">100%</text>
+    <text x="20" y="56" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">TITLE VERIFIED</text>
+  </g>
+  <g transform="translate(372, 425)">
+    <rect width="140" height="74" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    <text x="20" y="34" fill="#bda8f2" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="24">4.9/5</text>
+    <text x="20" y="56" fill="#8f8a9f" font-family="'JetBrains Mono', monospace" font-size="11">CLIENT RATING</text>
+  </g>
+
+  <!-- Right Visual Cards (Modern Luxury Villa Showcase & 360 Tour) -->
+  <g transform="translate(660, 130)">
+    <!-- Big Showcase Card -->
+    <rect width="500" height="380" rx="20" fill="linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02))" stroke="rgba(255,255,255,0.12)"/>
+    
+    <!-- Villa Architecture Rendering -->
+    <rect x="25" y="25" width="450" height="230" rx="14" fill="#13101e"/>
+    <!-- Modern Villa Geometry -->
+    <polygon points="50,190 50,110 220,90 220,190" fill="#201a33"/>
+    <polygon points="220,90 420,105 420,190 220,190" fill="#292140"/>
+    <polygon points="120,70 380,70 430,95 180,95" fill="url(#he-gold)" opacity="0.85"/>
+    <!-- Glass facade windows -->
+    <rect x="70" y="120" width="120" height="60" rx="4" fill="rgba(157,134,214,0.3)" stroke="rgba(255,255,255,0.2)"/>
+    <line x1="130" y1="120" x2="130" y2="180" stroke="rgba(255,255,255,0.2)"/>
+    <rect x="240" y="120" width="150" height="60" rx="4" fill="rgba(157,134,214,0.3)" stroke="rgba(255,255,255,0.2)"/>
+    <line x1="315" y1="120" x2="315" y2="180" stroke="rgba(255,255,255,0.2)"/>
+    <!-- Infinity pool reflection -->
+    <rect x="50" y="195" width="400" height="45" rx="6" fill="linear-gradient(180deg, #1d2b45, #0a111c)"/>
+    <line x1="50" y1="205" x2="450" y2="205" stroke="rgba(56,189,248,0.25)" stroke-dasharray="12 8"/>
+    <line x1="80" y1="220" x2="420" y2="220" stroke="rgba(56,189,248,0.15)" stroke-dasharray="16 12"/>
+
+    <!-- 360 Tour Pill badge -->
+    <rect x="45" y="45" width="130" height="28" rx="14" fill="rgba(0,0,0,0.6)" stroke="url(#he-gold)"/>
+    <circle cx="62" cy="59" r="5" fill="url(#he-gold)"/>
+    <text x="76" y="63" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">360° TOUR ACTIVE</text>
+
+    <!-- Property Details info -->
+    <text x="35" y="295" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="20">THE OBSIDIAN PAVILION · HILLSIDE</text>
+    <text x="35" y="320" fill="#a9a4ba" font-family="'Inter Tight', sans-serif" font-size="14">8,400 Sq Ft · 5 En-suite Bedrooms · Heated Infinity Pool</text>
+
+    <!-- Price and booking trigger -->
+    <text x="35" y="355" fill="url(#he-gold)" font-family="'Inter Tight', sans-serif" font-weight="700" font-size="22">$4.65M</text>
+    <rect x="360" y="332" width="115" height="34" rx="17" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.15)"/>
+    <text x="417" y="353" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="12" text-anchor="middle">DETAILS ↗</text>
+  </g>
+
+  <!-- Bottom Featured Estates Strip -->
+  <g transform="translate(60, 550)">
+    <rect width="1080" height="150" rx="20" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+    
+    <!-- Item 1 -->
+    <g transform="translate(30, 25)">
+      <rect width="320" height="100" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="24" y="38" fill="url(#he-gold)" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1">RESIDENCE 01</text>
+      <text x="24" y="64" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="18">The Canopy Penthouse</text>
+      <text x="24" y="86" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">Double height ceilings · Panoramic skyline</text>
+    </g>
+
+    <!-- Item 2 -->
+    <g transform="translate(380, 25)">
+      <rect width="320" height="100" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="24" y="38" fill="#bda8f2" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1">RESIDENCE 02</text>
+      <text x="24" y="64" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="18">Azure Shoreline Villa</text>
+      <text x="24" y="86" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">Direct private beach access &amp; yacht mooring</text>
+    </g>
+
+    <!-- Item 3 -->
+    <g transform="translate(730, 25)">
+      <rect width="320" height="100" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+      <text x="24" y="38" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="1">RESIDENCE 03</text>
+      <text x="24" y="64" fill="#ffffff" font-family="'Inter Tight', sans-serif" font-weight="600" font-size="18">The Monolith Estate</text>
+      <text x="24" y="86" fill="#8f8a9f" font-family="'Inter Tight', sans-serif" font-size="13">Brutalist architecture · Biophilic courtyard</text>
+    </g>
+  </g>
+</svg>
+
